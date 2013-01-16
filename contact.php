@@ -8,7 +8,7 @@
 <![endif]-->
 </head>
 
-<body>
+<body id="contact_page">
 
 <div class="container">
  

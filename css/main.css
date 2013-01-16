@@ -123,3 +123,8 @@ footer {
 header, section, footer, aside, article, figure {
 	display: block;
 }
+
+#home_page #home a, #about_page #about a, #contact_page #contact a {
+	color:white;	
+	background-color:green;
+}
