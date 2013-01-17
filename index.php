@@ -8,7 +8,14 @@
 	//create container for each piece of data
 	while($row = $myData->fetch_assoc())
 	{
-		$content = $row['content'];
+		if($row['section_name'] === 'intro')
+		{
+			$intro = $row['content'];
+		}
+		elseif($row['section_name'] === 'blurb')
+		{
+			$blurb = $row['content'];
+		}
 	}
 ?>
 
@@ -33,7 +40,7 @@
  <?php require_once('inc/nav.php'); ?>
     
     <aside>
-      <?php echo $content; ?>
+      <?php echo $blurb; ?>
     </aside>
   <!-- end .sidebar1 --></div>
   
@@ -44,7 +51,7 @@
     <section>
      <h2>How to use this document</h2>
       <p>
-        <?php echo 5 * 20; ?>
+        <?php echo $intro; ?>
       </p>
     </section>
   
